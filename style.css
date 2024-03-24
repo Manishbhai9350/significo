@@ -1,0 +1,92 @@
+:root {
+  --orange: #ef9d71;
+  --yellow: #f5f19c;
+  --salmon: #ef9d71;
+  --salma: #894f2f;
+  --cyan: #aedee0;
+  --light: #fff;
+  --dark: #000;
+}
+
+@font-face {
+  font-family: Machina;
+  src: url(./font1.woff);
+}
+@font-face {
+  font-family: Machina-Light;
+  src: url(./font2.woff);
+}
+@font-face {
+  font-family: Santosha-variable;
+  src: url(./font3.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::selection {
+  background: #ef9d71;
+}
+body {
+  transition: 0.56s all ease-in-out;
+}
+body[theme="dark"] {
+  background: var(--dark);
+  color: var(--light);
+}
+body[theme="orange"] {
+  background: var(--orange);
+  color: var(--dark);
+}
+
+body[theme="salmon"] {
+  background: var(--salmon);
+  color: var(--salma);
+}
+body[theme="cyan"] {
+  background: var(--cyan);
+  color: black;
+}
+
+body[theme="light"] {
+  background: var(--light);
+}
+body[theme="yellow"] {
+  background: var(--yellow);
+  color: var(--dark);
+}
+
+.row {
+  height: 65px;
+}
+.video {
+  clip-path: circle(var(--clip) at 50% 50%);
+}
+.craft-arrow {
+  transition: all 0.2s ease-in;
+}
+
+.float-img {
+  transition: all 0.36s ease-out;
+  pointer-events: none;
+  scale: 0;
+}
+
+.flow {
+  transition: all 0.33s ease-in-out;
+}
+
+.card {
+  transition: all 0.3s ease-in-out;
+}
+
+.machina {
+  font-family: Machina;
+}
+
+.santosha {
+  font-family: Santosha-variable;
+  font-weight: 100;
+}
